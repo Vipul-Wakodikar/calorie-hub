@@ -1,12 +1,110 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
+section{
+  margin: 2rem 0 1rem 0;
+}
+
+input{
+  font-size: 18px;
+  height: 20px;
+  border-radius: 0%;
+  text-align: center;
+}
+.searchInput{
+  width: 500px;
+}
+label{
+  padding: 0%;
+  margin: 0%;
+}
+input[type=checkbox] {
+  transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  margin-top: 5px;
+  padding-left: 10px;
+  padding: 10px;
+}
+button{
+  margin-top: 0;
+  padding: 0.5rem 1rem;
+  /* padding-bottom: 10px; */
+  height: 27px;
+  border: none;
+  background-color: navy;
+  color: white;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  text-align: center;
+  margin: 2rem;
+}
+.nutrients ul{
+  display: flex;
+  width: 35rem;
+  justify-content: space-evenly; 
+}
+ul{
+  list-style: none;
+}
+.meals{
+  display: flex;
+}
+article{
+  /* text-align: center;
+  align-items: center; */
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 0rem 1rem;
+  max-width:18rem;
+  box-shadow: 0 4px 8px 2px rgba(77, 77, 77, 0.15);
+}
+.instruction{
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+a{
+  text-decoration: none;
+  background-color: darkslategray;
+  color: white;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+}
+@media only screen and (max-width: 1024px) {
+  .meals {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nutrients ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  input{
+    width: 300px;
+  }
+  a{
+    text-align: center;
+    align-items: center;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
