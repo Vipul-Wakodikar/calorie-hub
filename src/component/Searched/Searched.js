@@ -38,9 +38,13 @@ function App() {
           className = "searchInput"
         />
         <button onClick={getMealData}>Get Daily Meal Plan</button>
-        <input type="checkbox" value="Only Vegetarian food" onClick={getMealData} checked= {isVeg} onChange = {checkBoxHandler} className = "checkbox-style"></input>
-        <label>Only veg</label>
+        
+        
       </section>
+      <div>
+      <input type="checkbox" value="Only Vegetarian food" onClick={getMealData} checked= {isVeg} onChange = {checkBoxHandler} className = "checkbox-style"></input>
+      <label>Only veg</label>
+      </div>
       {mealData && <MealList mealData={mealData} />}
     </div>
   );
